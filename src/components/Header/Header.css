@@ -1,0 +1,33 @@
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--clr-dark);
+}
+
+.header__logo-container {
+    display: flex;
+    flex-direction: row;
+    color: var(--clr-accent);
+    align-items: center;
+    height: fit-content;
+}
+
+.header__logo {
+    font-size: var(--fs-900);
+    color: var(--clr-accent);
+    font-weight: 700;
+    font-family: var(--font-accent);
+}
+
+.header__open-side-menu-icon {
+    background: transparent;
+    border: none;
+    color: var(--clr-accent);
+    font-size: var(--fs-700);
+    margin-right: 3rem;
+}

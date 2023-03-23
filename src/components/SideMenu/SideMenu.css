@@ -1,0 +1,16 @@
+.side-menu {
+    flex: 1;
+    max-width: 15rem;
+    background-color: var(--clr-very-dark);
+    position: relative;
+}
+
+.side-menu__side-menu-close-cross {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: var(--fs-500);
+    color: var(--clr-accent);
+}
