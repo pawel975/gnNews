@@ -1,0 +1,266 @@
+{
+    "status": "ok",
+    "totalResults": 30,
+    "articles": [
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "wiadomosci.gazeta.pl",
+            "title": "Przewoźnicy blokowali obwodnicę Warszawy. 200 tirów z banerami - wiadomosci.gazeta.pl",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMifmh0dHBzOi8vd2lhZG9tb3NjaS5nYXpldGEucGwvd2lhZG9tb3NjaS83LDExNDg4MywyOTU4NjIyNyxwcnpld296bmljeS16YWJsb2tvd2FsaS1vYndvZG5pY2Utd2Fyc3phd3ktMjAwLXRpcm93LXotYmFuZXJhbWkuaHRtbNIBAA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-22T14:01:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "Pomponik.pl",
+            "title": "Książę William odegra kluczową rolę podczas koronacji Karola III? Złoży mu pewną obietnicę! - Pomponik.pl",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMibGh0dHBzOi8vd3d3LnBvbXBvbmlrLnBsL3Bsb3RraS9uZXdzLWtzaWF6ZS13aWxsaWFtLW9kZWdyYS1rbHVjem93YS1yb2xlLXBvZGN6YXMta29yb25hY2ppLWthcm9sYSxuSWQsNjY3MTAyMtIBb2h0dHBzOi8vd3d3LnBvbXBvbmlrLnBsL3Bsb3RraS9uZXdzYW1wLWtzaWF6ZS13aWxsaWFtLW9kZWdyYS1rbHVjem93YS1yb2xlLXBvZGN6YXMta29yb25hY2ppLWthcm9sYSxuSWQsNjY3MTAyMg?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-22T13:57:07Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "wiadomosci.gazeta.pl",
+            "title": "Wielka Brytania. Lekarze podejrzewali, że matka bije dziecko. U chłopca wykryto białaczkę - wiadomosci.gazeta.pl",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMieWh0dHBzOi8vd2lhZG9tb3NjaS5nYXpldGEucGwvd2lhZG9tb3NjaS83LDExNDg4MSwyOTU4NjE2NCx3aWVsa2EtYnJ5dGFuaWEtbGVrYXJ6ZS1wb2RlanJ6ZXdhbGktemUtbWF0a2EtYmlqZS1kemllY2tvLmh0bWzSAXhodHRwczovL3dpYWRvbW9zY2kuZ2F6ZXRhLnBsL3dpYWRvbW9zY2kvNywxMTQ4ODEsMjk1ODYxNjQsd2llbGthLWJyeXRhbmlhLWxla2FyemUtcG9kZWpyemV3YWxpLXplLW1hdGthLWJpamUtZHppZWNrby5hbXA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-22T13:46:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "TVP Info",
+            "title": "1,3 mln zł dla Andrzeja Gwiazdy za aresztowanie w latach 80. - TVP Info",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMiXWh0dHBzOi8vd3d3LnR2cC5pbmZvLzY4NjU2NjgxLzEzLW1sbi16bC1kbGEtYW5kcnplamEtZ3dpYXpkeS16YS1hcmVzenRvd2FuaWUtdy1sYXRhY2gtODAtdHljaNIBAA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-22T13:18:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "Gazeta Wyborcza",
+            "title": "ZNP po rozmowach w Ministerstwie Edukacji. \"My o podwyżkach, oni o biurokracji\" - Gazeta Wyborcza",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMiY2h0dHBzOi8vd3lib3JjemEucGwvNyw4Mjk4MywyOTU4NTc0Nix6bnAtcG8tcm96bW93YWNoLXctbWluaXN0ZXJzdHdpZS1lZHVrYWNqaS1teS1vLXBvZHd5emthY2guaHRtbNIBAA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-22T13:08:46Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "Sportowefakty",
+            "title": "Mesut Oezil kończy karierę. Wymowne oświadczenie piłkarza - Sportowefakty",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMiaGh0dHBzOi8vc3BvcnRvd2VmYWt0eS53cC5wbC9waWxrYS1ub3puYS8xMDUxNDYzL21lc3V0LW9lemlsLWtvbmN6eS1rYXJpZXJlLXd5bW93bmUtb3N3aWFkY3plbmllLXBpbGthcnph0gFsaHR0cHM6Ly9zcG9ydG93ZWZha3R5LndwLnBsL2FtcC9waWxrYS1ub3puYS8xMDUxNDYzL21lc3V0LW9lemlsLWtvbmN6eS1rYXJpZXJlLXd5bW93bmUtb3N3aWFkY3plbmllLXBpbGthcnph?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-22T12:48:45Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "Wyborcza - Wrocław",
+            "title": "Zaginięcie Renaty i Wiktorii Majchrzak z Wrocławia budzi wątpliwości. Miały długi. Allegro blokuje ich konto - Wyborcza - Wrocław",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMicmh0dHBzOi8vd3JvY2xhdy53eWJvcmN6YS5wbC93cm9jbGF3LzcsMzU3NzEsMjk1ODQwNTgsemFnaW5pZWNpZS1yZW5hdHktaS13aWt0b3JpaS1tYWpjaHJ6YWstei13cm9jbGF3aWEtYnVkemkuaHRtbNIBAA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-22T12:45:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "next.gazeta.pl",
+            "title": "Prof. Litwiniuk z RPP o stopach procentowych. \"Ja się z rządem zgadzam\" - next.gazeta.pl",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMibmh0dHBzOi8vbmV4dC5nYXpldGEucGwvbmV4dC83LDE1MTAwMywyOTU4NTk2Nixwcm9mLWxpdHdpbml1ay16LXJwcC1vLXN0b3BhY2gtcHJvY2VudG93eWNoLWphLXNpZS16LXJ6YWRlbS5odG1s0gFtaHR0cHM6Ly9uZXh0LmdhemV0YS5wbC9uZXh0LzcsMTUxMDAzLDI5NTg1OTY2LHByb2YtbGl0d2luaXVrLXotcnBwLW8tc3RvcGFjaC1wcm9jZW50b3d5Y2gtamEtc2llLXotcnphZGVtLmFtcA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-22T12:08:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "wiadomosci.gazeta.pl",
+            "title": "Rosyjska rakieta trafiła w blok. Zełenski: To nie może stać się \"tylko kolejnym dniem\" w Ukrainie - wiadomosci.gazeta.pl",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMieWh0dHBzOi8vd2lhZG9tb3NjaS5nYXpldGEucGwvd2lhZG9tb3NjaS83LDExNDg4MSwyOTU4NjE4Nyxyb3N5anNrYS1yYWtpZXRhLXRyYWZpbGEtdy1ibG9rLW1pZXN6a2FsbnktemVsZW5za2ktdG8tbmllLmh0bWzSAXhodHRwczovL3dpYWRvbW9zY2kuZ2F6ZXRhLnBsL3dpYWRvbW9zY2kvNywxMTQ4ODEsMjk1ODYxODcscm9zeWpza2EtcmFraWV0YS10cmFmaWxhLXctYmxvay1taWVzemthbG55LXplbGVuc2tpLXRvLW5pZS5hbXA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-22T11:39:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "Pudelek",
+            "title": "\"Love Island\". Fani oburzeni zachowaniem Mateusza po odejściu Alicji: \"Wychodzi na to, że PO PROSTU GRAŁ\" - Pudelek",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMiiwFodHRwczovL3d3dy5wdWRlbGVrLnBsL2xvdmUtaXNsYW5kLWZhbmktb2J1cnplbmktemFjaG93YW5pZW0tbWF0ZXVzemEtcG8tb2RlanNjaXUtYWxpY2ppLXd5Y2hvZHppLW5hLXRvLXplLXBvLXByb3N0dS1ncmFsLTY4NzkxNjA2MzYxNjQ4OTZh0gGRAWh0dHBzOi8vd3d3LnB1ZGVsZWsucGwvbG92ZS1pc2xhbmQtZmFuaS1vYnVyemVuaS16YWNob3dhbmllbS1tYXRldXN6YS1wby1vZGVqc2NpdS1hbGljamktd3ljaG9kemktbmEtdG8temUtcG8tcHJvc3R1LWdyYWwtNjg3OTE2MDYzNjE2NDg5NmE_YW1wPTE?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-22T11:19:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "TVP Info",
+            "title": "Miał perukę, makijaż i sukienkę. W Złotoryi 45-latek kradł gadżety erotyczne - TVP Info",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMiZ2h0dHBzOi8vd3d3LnR2cC5pbmZvLzY4NjM4OTYyL3psb3RvcnlqYS1taWFsLXBlcnVrZS1tYWtpamF6LWktc3VraWVua2UtNDUtbGF0ZWsta3JhZGwtZ2FkemV0eS1lcm90eWN6bmXSAQA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-22T10:52:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "TVP SPORT",
+            "title": "Reprezentacja Polski. Plaga kontuzji trwa. Kacper Kozłowski opuścił zgrupowanie - TVP SPORT",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMia2h0dHBzOi8vc3BvcnQudHZwLnBsLzY4NjM4MjQxL3JlcHJlemVudGFjamEtcG9sc2tpLXBsYWdhLWtvbnR1emppLXRyd2Eta2FjcGVyLWtvemxvd3NraS1vcHVzY2lsLXpncnVwb3dhbmll0gFvaHR0cHM6Ly9zcG9ydC50dnAucGwvNjg2MzgyNDEvcmVwcmV6ZW50YWNqYS1wb2xza2ktcGxhZ2Eta29udHV6amktdHJ3YS1rYWNwZXIta296bG93c2tpLW9wdXNjaWwtemdydXBvd2FuaWUvYW1w?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-22T10:30:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "Wirtualna Polska",
+            "title": "Keanu Reeves dla WP: \"Jesteśmy szczęściarzami, że ich mamy\". Chwali polską firmę - Wirtualna Polska",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMicGh0dHBzOi8vZmlsbS53cC5wbC9rZWFudS1yZWV2ZXMtZGxhLXdwLWplc3Rlc215LXN6Y3plc2NpYXJ6YW1pLXplLWljaC1tYW15LWNod2FsaS1wb2xza2EtZmlybWUtNjg3NzA1OTU5NjgzMTU1MmHSAXZodHRwczovL2ZpbG0ud3AucGwva2VhbnUtcmVldmVzLWRsYS13cC1qZXN0ZXNteS1zemN6ZXNjaWFyemFtaS16ZS1pY2gtbWFteS1jaHdhbGktcG9sc2thLWZpcm1lLTY4NzcwNTk1OTY4MzE1NTJhP2FtcD0x?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-22T10:21:41Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "TVN24",
+            "title": "Umowa koalicyjna Prawa i Sprawiedliwości i Partii Republikańskiej. Co zawiera? Ujawniamy zapisy - TVN24",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMifmh0dHBzOi8vdHZuMjQucGwvcHJlbWl1bS91bW93YS1rb2FsaWN5am5hLXByYXdhLWktc3ByYXdpZWRsaXdvc2NpLWktcGFydGlpLXJlcHVibGlrYW5za2llai1jby16YXdpZXJhLXVqYXduaWFteS16YXBpc3ktNjg1NDgyNNIBAA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-22T10:15:38Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "Onet",
+            "title": "Przemoc seksualna w niemieckim Kościele. Jest decyzja w sprawie Benedykta XVI - Onet",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMiiwFodHRwczovL3d3dy5vbmV0LnBsL2luZm9ybWFjamUvb25ldHdpYWRvbW9zY2kvcHJ6ZW1vYy1zZWtzdWFsbmEtdy1uaWVtaWVja2ltLWtvc2NpZWxlLWplc3QtZGVjeXpqYS13LXNwcmF3aWUtYmVuZWR5a3RhLXh2aS9ybWR5bDhsLDc5Y2ZjMjc40gEA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-22T10:09:52Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "Onet",
+            "title": "Żarty z Putina. Tak Ukraińcy reagują na wizytę Xi Jinpinga w Moskwie - Onet",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMiggFodHRwczovL3d3dy5vbmV0LnBsL2luZm9ybWFjamUvb25ldHdpYWRvbW9zY2kvemFydHktei1wdXRpbmEtdGFrLXVrcmFpbmN5LXJlYWd1amEtbmEtd2l6eXRlLXhpLWppbnBpbmdhLXctbW9za3dpZS9kYmozeGtnLDc5Y2ZjMjc40gEA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-22T10:08:58Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "gsmManiaK.pl",
+            "title": "Prawie jak iPhone 14 Pro za ułamek ceny. realme C55: cena i promocja w Polsce - gsmManiaK.pl",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMiQ2h0dHBzOi8vd3d3LmdzbW1hbmlhay5wbC8xMzkzMzg5L3ByZW1pZXJhLXJlYWxtZS1jNTUtY2VuYS13LXBvbHNjZS_SAUdodHRwczovL3d3dy5nc21tYW5pYWsucGwvMTM5MzM4OS9wcmVtaWVyYS1yZWFsbWUtYzU1LWNlbmEtdy1wb2xzY2UvYW1wLw?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-22T10:00:17Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "Money.pl",
+            "title": "Polska zyskała specjalny status. Premier Japonii poinformował o decyzji - Money.pl",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMifWh0dHBzOi8vd3d3Lm1vbmV5LnBsL2dvc3BvZGFya2EvcG9sc2thLXp5c2thbGEtc3BlY2phbG55LXN0YXR1cy1wcmVtaWVyLWphcG9uaWktcG9pbmZvcm1vd2FsLW8tZGVjeXpqaS02ODc5MTQyMTk3NTEyOTkyYS5odG1s0gEA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-22T09:41:12Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "BusinessInsider",
+            "title": "Poprawiają się nastroje polskich konsumentów, ale wiara w dezinflację słabnie - BusinessInsider",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMifmh0dHBzOi8vYnVzaW5lc3NpbnNpZGVyLmNvbS5wbC9nb3Nwb2RhcmthL3BvcHJhd2lhamEtc2llLW5hc3Ryb2plLXBvbHNraWNoLWtvbnN1bWVudG93LWFsZS13aWFyYS13LWRlemluZmxhY2plLXNsYWJuaWUvM2xneWN4atIBggFodHRwczovL2J1c2luZXNzaW5zaWRlci5jb20ucGwvZ29zcG9kYXJrYS9wb3ByYXdpYWphLXNpZS1uYXN0cm9qZS1wb2xza2ljaC1rb25zdW1lbnRvdy1hbGUtd2lhcmEtdy1kZXppbmZsYWNqZS1zbGFibmllLzNsZ3ljeGouYW1w?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-22T09:32:06Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": "Fakt.pl",
+            "title": "Poruszające zjawisko w sieci. Ludzie robią to w intencji Marty Kubackiej - Fakt.pl",
+            "description": null,
+            "url": "https://news.google.com/rss/articles/CBMid2h0dHBzOi8vc3BvcnQuZmFrdC5wbC9za29raS1uYXJjaWFyc2tpZS9wb3J1c3phamFjZS16amF3aXNrby13LXNpZWNpLWx1ZHppZS1yb2JpYS10by13LWludGVuY2ppLW1hcnR5LWt1YmFja2llai9iZ3lqd2gx0gEA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2023-03-22T09:18:41Z",
+            "content": null
+        }
+    ]
+}

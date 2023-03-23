@@ -1,0 +1,22 @@
+
+.article {
+    background-color: var(--clr-dark);
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.article__header {
+    color: var(--clr-accent);
+    font-family: var(--font-accent);
+    font-size: var(--fs-400);
+}
+
+.article__source,
+.article__publication-date {
+    font-size: var(--fs-200);
+    color: var(--clr-light);
+}
