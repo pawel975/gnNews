@@ -31,6 +31,21 @@
     padding: 1rem;
     border-radius: 1rem;
     display: flex;
+    height: fit-content;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.article__main-content-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+}
+
+.article__release-details-container {
+    width: 100%;
+    display: flex;
     flex-direction: column;
     gap: 0.3rem;
 }
@@ -45,10 +60,6 @@
 .article__publication-date.grid-type {
     font-size: var(--fs-200);
     color: var(--clr-light);
-}
-
-.article__source.grid-type {
-    margin-top: auto;
 }
 
 .article__image-container {

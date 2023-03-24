@@ -19,14 +19,21 @@ const Article: React.FC<ArticleProps> = ({articleData, type}) => {
 
     const gridTypeArticle =
         <div className="article grid-type">
-            {urlToImage && 
-                <div className="article__image-container">
-                    <img src={urlToImage} alt="article" />
-                </div>
-            }
-            <header className="article__header grid-type">{title}</header>
-            <div className="article__source grid-type">Source: <span><strong>{source.name}</strong></span></div>
-            <div className="article__publication-date grid-type">Published at: <span><strong>{publishedAt}</strong></span></div>
+
+            <div className="article__main-content-container">
+                {urlToImage && 
+                    <div className="article__image-container">
+                        <img src={urlToImage} alt="article" />
+                    </div>
+                }
+                <header className="article__header grid-type">{title}</header>
+            </div>
+
+            <div className="article__release-details-container">
+                <div className="article__source grid-type">Source: <span><strong>{source.name}</strong></span></div>
+                <div className="article__publication-date grid-type">Published at: <span><strong>{publishedAt}</strong></span></div>
+            </div>
+
         </div>
 
     return (
