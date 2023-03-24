@@ -11,20 +11,28 @@ const Article: React.FC<ArticleProps> = ({articleData, type}) => {
     const {author, content, description, publishedAt, source, title, url, urlToImage} = articleData
 
     const listTypeArticle = 
-    <>
-        <header className="article__header">{title}</header>
-        <div className="article__source">Source: <span><strong>{source.name}</strong></span></div>
-        <div className="article__publication-date">Published at: <span><strong>{publishedAt}</strong></span></div>
-    </>
+        <div className="article list-type">
+            <header className="article__header list-type">{title}</header>
+            <div className="article__source list-type">Source: <span><strong>{source.name}</strong></span></div>
+            <div className="article__publication-date list-type">Published at: <span><strong>{publishedAt}</strong></span></div>
+        </div>
 
     const gridTypeArticle =
-    <>
-    </>
+        <div className="article grid-type">
+            {urlToImage && 
+                <div className="article__image-container">
+                    <img src={urlToImage} alt="article" />
+                </div>
+            }
+            <header className="article__header grid-type">{title}</header>
+            <div className="article__source grid-type">Source: <span><strong>{source.name}</strong></span></div>
+            <div className="article__publication-date grid-type">Published at: <span><strong>{publishedAt}</strong></span></div>
+        </div>
 
     return (
-        <div className="article">
+        <>
             {type === "list" ? listTypeArticle : gridTypeArticle}
-        </div>
+        </>
     )
 }
 
