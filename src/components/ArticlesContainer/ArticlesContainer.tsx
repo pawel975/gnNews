@@ -12,7 +12,7 @@ const ArticlesContainer: React.FC<ArticlesContainerProps> = ({fetchedArticles}) 
     const allArticles = fetchedArticles.map(articleData => {
 
         return (
-            <Article key={getRandomUUID()} articleData={articleData} type={"grid"}/>
+            <Article key={getRandomUUID()} articleData={articleData} type={"list"}/>
         )
     })
 

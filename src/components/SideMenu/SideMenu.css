@@ -1,6 +1,6 @@
 .side-menu {
     flex: 1;
-    max-width: 15rem;
+    min-width: 15rem;
     background-color: var(--clr-very-dark);
     position: relative;
 }
