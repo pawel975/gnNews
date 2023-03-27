@@ -1,5 +1,6 @@
 import getRandomUUID from "../../helpers/getRandomUUID"
 import { ArticleData } from "../../intefaces/ArticleData"
+import { useAppSelector } from "../../redux/hooks";
 import Article from "../Article/Article"
 import './ArticlesContainer.css';
 
@@ -9,10 +10,12 @@ interface ArticlesContainerProps {
 
 const ArticlesContainer: React.FC<ArticlesContainerProps> = ({fetchedArticles}) => {
 
+    const viewType = useAppSelector(state => state.articlesViewType.type);
+
     const allArticles = fetchedArticles.map(articleData => {
 
         return (
-            <Article key={getRandomUUID()} articleData={articleData} type={"list"}/>
+            <Article key={getRandomUUID()} articleData={articleData} type={viewType}/>
         )
     })
 
