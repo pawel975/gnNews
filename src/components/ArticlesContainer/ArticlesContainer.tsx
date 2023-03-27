@@ -15,7 +15,7 @@ const ArticlesContainer: React.FC<ArticlesContainerProps> = ({fetchedArticles}) 
     const allArticles = fetchedArticles.map(articleData => {
 
         return (
-            <Article key={getRandomUUID()} articleData={articleData} type={viewType}/>
+            <Article key={getRandomUUID()} articleData={articleData} viewType={viewType}/>
         )
     })
 

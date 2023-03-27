@@ -3,10 +3,10 @@ import "./Article.css";
 
 interface ArticleProps {
     articleData: ArticleData,
-    type: string
+    viewType: string
 }
 
-const Article: React.FC<ArticleProps> = ({articleData, type}) => {
+const Article: React.FC<ArticleProps> = ({articleData, viewType}) => {
 
     const {author, content, description, publishedAt, source, title, url, urlToImage} = articleData
 
@@ -38,7 +38,7 @@ const Article: React.FC<ArticleProps> = ({articleData, type}) => {
 
     return (
         <>
-            {type === "list" ? listTypeArticle : gridTypeArticle}
+            {viewType === "list" ? listTypeArticle : gridTypeArticle}
         </>
     )
 }
