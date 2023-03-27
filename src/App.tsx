@@ -23,7 +23,7 @@ function App() {
     // TODO: Switch mocked data to 
     // fetch(`https://newsapi.org/v2/top-headlines?country=pl&apiKey=${import.meta.env.VITE_NEWS_API_KEY}`).then(res => res.json()).then(data => setFetchedArticles(data.articles)) 
     setFetchedArticles(countryNewsUS.articles);
-    console.log(fetchedArticles)
+    // console.log(fetchedArticles)
 
   }, [])
 
@@ -35,7 +35,7 @@ function App() {
         isSideMenuOpen={isSideMenuOpen}
         handleSideMenuToggle={handleSideMenuToggle}
       />
-      <Footer/>
+      <Footer viewedArticlesCount={fetchedArticles.length}/>
     </div>
   )
 }
