@@ -14,7 +14,7 @@ const ArticleDetailsPopUp: React.FC<ArticleDetailsPopUpProps> = ({title, content
                 <p className="article-details-pop-up__content">{content}</p>
                 <div className="article-details-pop-up__sources">
                     <div className="article-details-pop-up__title__author">Author: <strong>{author? author : "No information"}</strong></div>
-                    <div className="article-details-pop-up__source-link">Source:<a href={url}> {url}</a> 
+                    <div className="article-details-pop-up__source-link">Source: <span>{sourceName} - </span><a href={url}> {url}</a> 
 
                     </div>
                 </div>

@@ -1,6 +1,11 @@
 
 /* Styles for list style article */
 
+.article {
+    border: none;
+    text-align: left;
+}
+
 .article.list-type {
     background-color: var(--clr-dark);
     width: 90%;

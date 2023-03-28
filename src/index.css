@@ -5,6 +5,7 @@
     --clr-dark: #0E4749;
     --clr-light: #e3e2e2;
     --clr-accent: #FFFD82;
+    --clr-contrast: hsl(23, 100%, 58%);
 
     /* Fonts */
     --font-standard: 'Roboto', sans-serif;
@@ -37,4 +38,8 @@ body {
     height: 100%;
     width: 100%;
     font-family: var(--font-standard);
+}
+
+*:focus {
+    outline: 3px solid var(--clr-contrast);
 }

@@ -12,28 +12,30 @@ const Article: React.FC<ArticleProps> = ({articleData, viewType, handleArticleCl
     const {author, content, publishedAt, source, title, url, urlToImage} = articleData
 
     const listTypeArticle = 
-        <div 
+        <button 
             className="article list-type"
             onClick={() => handleArticleClick({
                 title: title,
                 content: content,
                 author: author,
-                url: url
+                url: url,
+                sourceName: source.name
             })}
         >
             <header className="article__header list-type">{title}</header>
             <div className="article__source list-type">Source: <span><strong>{source.name}</strong></span></div>
             <div className="article__publication-date list-type">Published at: <span><strong>{publishedAt}</strong></span></div>
-        </div>
+        </button>
 
     const gridTypeArticle =
-        <div 
+        <button 
             className="article grid-type"
             onClick={() => handleArticleClick({
                 title: title,
                 content: content,
                 author: author,
-                url: url
+                url: url,
+                sourceName: source.name
             })}
         >
 
@@ -51,7 +53,7 @@ const Article: React.FC<ArticleProps> = ({articleData, viewType, handleArticleCl
                 <div className="article__publication-date grid-type">Published at: <span><strong>{publishedAt}</strong></span></div>
             </div>
 
-        </div>
+        </button>
 
     return (
         <>
