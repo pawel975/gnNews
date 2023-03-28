@@ -10,8 +10,8 @@ const ArticleDetailsPopUp: React.FC<ArticleDetailsPopUpProps> = ({title, content
     return (
         <div className="article-details-pop-up" onClick={() => onClose()}>
             <section className="article-details-pop-up__modal" onClick={e => e.stopPropagation()}>
-                <header className="article-details-pop-up__title">{title}</header>
-                <p className="article-details-pop-up__content">{content}</p>
+                <header className="article-details-pop-up__title">{title? title : "There is no title"}</header>
+                <p className="article-details-pop-up__content">{content? content : "There is no content to view"}</p>
                 <div className="article-details-pop-up__sources">
                     <div className="article-details-pop-up__title__author">Author: <span>{author? author : "No information"}</span></div>
                     <div className="article-details-pop-up__source-link">Source: <span>{sourceName} - </span><a href={url}>{url}</a> 
