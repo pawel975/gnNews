@@ -4,21 +4,38 @@ import "./Article.css";
 interface ArticleProps {
     articleData: ArticleData,
     viewType: string
+    handleArticleClick: Function
 }
 
-const Article: React.FC<ArticleProps> = ({articleData, viewType}) => {
+const Article: React.FC<ArticleProps> = ({articleData, viewType, handleArticleClick}) => {
 
-    const {author, content, description, publishedAt, source, title, url, urlToImage} = articleData
+    const {author, content, publishedAt, source, title, url, urlToImage} = articleData
 
     const listTypeArticle = 
-        <div className="article list-type">
+        <div 
+            className="article list-type"
+            onClick={() => handleArticleClick({
+                title: title,
+                content: content,
+                author: author,
+                url: url
+            })}
+        >
             <header className="article__header list-type">{title}</header>
             <div className="article__source list-type">Source: <span><strong>{source.name}</strong></span></div>
             <div className="article__publication-date list-type">Published at: <span><strong>{publishedAt}</strong></span></div>
         </div>
 
     const gridTypeArticle =
-        <div className="article grid-type">
+        <div 
+            className="article grid-type"
+            onClick={() => handleArticleClick({
+                title: title,
+                content: content,
+                author: author,
+                url: url
+            })}
+        >
 
             <div className="article__main-content-container">
                 {urlToImage && 

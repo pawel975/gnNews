@@ -6,16 +6,22 @@ import './ArticlesContainer.css';
 
 interface ArticlesContainerProps {
     fetchedArticles: Array<ArticleData>
+    handleArticleClick: Function
 }
 
-const ArticlesContainer: React.FC<ArticlesContainerProps> = ({fetchedArticles}) => {
+const ArticlesContainer: React.FC<ArticlesContainerProps> = ({fetchedArticles, handleArticleClick}) => {
 
     const viewType = useAppSelector(state => state.articlesViewType.type);
 
     const allArticles = fetchedArticles.map(articleData => {
 
         return (
-            <Article key={getRandomUUID()} articleData={articleData} viewType={viewType}/>
+            <Article 
+                key={getRandomUUID()} 
+                articleData={articleData} 
+                viewType={viewType}
+                handleArticleClick={handleArticleClick}
+            />
         )
     })
 

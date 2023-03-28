@@ -13,20 +13,20 @@ interface MainContentProps {
     isSideMenuOpen: boolean
     handleSideMenuToggle: Function
     setFetchedArticles: Function
+    handleArticleClick: Function
 }
 
-const MainContent: React.FC<MainContentProps> = ({fetchedArticles, isSideMenuOpen, handleSideMenuToggle, setFetchedArticles}) => {
+const MainContent: React.FC<MainContentProps> = ({fetchedArticles, isSideMenuOpen, handleSideMenuToggle, setFetchedArticles, handleArticleClick}) => {
 
-    const countryCode = useParams().countryCode || "pl";
+    const DEFAULT_COUNTRY = "pl"
 
-    console.log(fetchedArticles)
+    const countryCode = useParams().countryCode || DEFAULT_COUNTRY;
 
     useEffect(() => {
 
         // TODO: Switch mocked data to 
         // fetch(`https://newsapi.org/v2/top-headlines?country=${countryCode}&apiKey=${import.meta.env.VITE_NEWS_API_KEY}`).then(res => res.json()).then(data => setFetchedArticles(data.articles)) 
         setFetchedArticles(countryNewsUS.articles);
-        console.log(countryCode)
     
       }, [countryCode, setFetchedArticles])
 
@@ -34,7 +34,10 @@ const MainContent: React.FC<MainContentProps> = ({fetchedArticles, isSideMenuOpe
     return (
         <main className="main-content">
             {isSideMenuOpen && <SideMenu handleSideMenuToggle={handleSideMenuToggle} />}
-            <ArticlesContainer fetchedArticles={fetchedArticles}/>
+            <ArticlesContainer 
+                fetchedArticles={fetchedArticles}
+                handleArticleClick={handleArticleClick}
+            />
         </main>
     )
 }
