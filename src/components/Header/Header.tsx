@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import ToggleArticlesViewTypeButton from '../ToggleArticlesViewTypeButton/ToggleArticlesViewTypeButton';
 import './Header.css';
 import {GiHamburgerMenu as OpenSideMenuIcon} from 'react-icons/gi';
@@ -19,9 +20,9 @@ const Header: React.FC<HeaderProps> = ({handleSideMenuToggle, handleConclusionPo
             </button>
 
             <div className="header__logo-container">
-                <a className='header__logo' href='/'>
+                <NavLink className='header__logo' to='/country/pl'>
                     <span>gnNews</span>
-                </a>
+                </NavLink>
             </div>
 
             <div className='header__actions-container'>
