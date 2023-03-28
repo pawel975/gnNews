@@ -20,7 +20,9 @@ const SideMenu: React.FC<SideMenuProps> = ({handleSideMenuToggle}) => {
         return (
             <NavLink
                 to={`/country/${COUNTRY_CODE}`} 
-                className='country'
+                className={({isActive, isPending}) => 
+                    isPending ? "country pending" : isActive ? "country active" : "country"
+                }
                 key={COUNTRY_CODE}
             >
                 <img src={`https://www.countryflagicons.com/${FLAG_STYLE}/${FLAG_SIZE}/${COUNTRY_CODE}.png`} alt='country'/>

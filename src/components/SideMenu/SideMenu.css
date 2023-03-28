@@ -17,21 +17,29 @@
 }
 
 .side-menu__countries-container {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
 }
 
 .country {
+    text-decoration: none;
     background: transparent;
     border: none;
     color: var(--clr-light);
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    padding: 0.3rem;
+    border-radius: 0.1rem;
 }
 
 .country span {
     text-align: left;
+}
+
+.active {
+    background-color: var(--clr-dark);
+    color: var(--clr-accent);
 }
