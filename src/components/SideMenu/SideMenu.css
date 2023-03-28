@@ -3,6 +3,7 @@
     min-width: 15rem;
     background-color: var(--clr-very-dark);
     position: relative;
+    padding: 1rem;
 }
 
 .side-menu__side-menu-close-cross {
@@ -13,4 +14,24 @@
     border: none;
     font-size: var(--fs-500);
     color: var(--clr-accent);
+}
+
+.side-menu__countries-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.country {
+    background: transparent;
+    border: none;
+    color: var(--clr-light);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.country span {
+    text-align: left;
 }
