@@ -41,8 +41,19 @@
     color: var(--clr-light);
 }
 
+.article-details-pop-up__sources span, a{
+    margin-top: auto;
+    font-size: var(--fs-200);
+    color:var(--clr-accent);
+}
+
 .article-details-pop-up__source-link {
     margin-top: auto;
     font-size: var(--fs-200);
+    color: var(--clr-accent);
+}
+
+.article-details-pop-up__source-link {
     color: var(--clr-light);
+    font-weight: bold;
 }
