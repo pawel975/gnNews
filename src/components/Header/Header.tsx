@@ -4,9 +4,10 @@ import {GiHamburgerMenu as OpenSideMenuIcon} from 'react-icons/gi';
 
 interface HeaderProps {
     handleSideMenuToggle: Function,
+    handleConclusionPopUpOpen: Function
 }
 
-const Header: React.FC<HeaderProps> = ({handleSideMenuToggle}) => {
+const Header: React.FC<HeaderProps> = ({handleSideMenuToggle, handleConclusionPopUpOpen}) => {
     return (
         <header className="header">
             
@@ -23,7 +24,17 @@ const Header: React.FC<HeaderProps> = ({handleSideMenuToggle}) => {
                 </a>
             </div>
 
-            <ToggleArticlesViewTypeButton/> 
+            <div className='header__actions-container'>
+                <button
+                    className='header__open-conclusions-button'
+                    onClick={() => handleConclusionPopUpOpen()}
+                >
+                    Conclusions
+                </button>
+
+                <ToggleArticlesViewTypeButton/> 
+            </div>
+
 
         </header>
     )

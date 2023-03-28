@@ -6,6 +6,8 @@ import MainContent from './components/MainContent/MainContent'
 import { ArticleData } from './intefaces/ArticleData'
 import {Routes, Route, Navigate} from "react-router-dom";
 import ArticleDetailsPopUp from './components/ArticleDetailsPopUp/ArticleDetailsPopUp'
+import PopUpContainer from './components/PopUpContainer/PopUpContainer'
+import Conclusions from './components/Conclusions/Conclusions'
 
 export interface ArticleDetails {
   title: string | null
@@ -19,7 +21,10 @@ function App() {
 
   const [isSideMenuOpen, setIsSideMenuOpen] = useState<boolean>(true);
   const [fetchedArticles, setFetchedArticles] = useState<Array<ArticleData>>([]);
+
   const [isArticleDetailsPopUpActive, setIsArticleDetailsPupUpActive] = useState<boolean>(false);
+  const [isConclusionsPopUpActive, setIsConclusionsPopUpActive] = useState<boolean>(false);
+
   const [articleDetails, setArticleDetails] = useState<ArticleDetails>(
     {
       title: "", 
@@ -38,6 +43,18 @@ function App() {
     setIsArticleDetailsPupUpActive(false);
   }
 
+  const handleArticleDetailsPopUpOpen = (): void => {
+    setIsArticleDetailsPupUpActive(true);
+  }
+
+  const handleConclusionPopUpClose = (): void => {
+    setIsConclusionsPopUpActive(false);
+  }
+
+  const handleConclusionPopUpOpen = (): void => {
+    setIsConclusionsPopUpActive(true);
+  }
+
   const handleArticleClick = (articleDetails: ArticleDetails): void => {
     setIsArticleDetailsPupUpActive(!isArticleDetailsPopUpActive);
     setArticleDetails(articleDetails);
@@ -47,17 +64,33 @@ function App() {
     <div className="app">
       
       {isArticleDetailsPopUpActive && 
-        <ArticleDetailsPopUp 
+        <PopUpContainer 
+          PopUpContent={
+            <ArticleDetailsPopUp 
+              title={articleDetails.title}
+              content={articleDetails.content}
+              author={articleDetails.author}
+              url={articleDetails.url}
+              sourceName={articleDetails.sourceName}
+            />
+          }
           onClose={handleArticleDetailsPopUpClose}
-          title={articleDetails.title}
-          content={articleDetails.content}
-          author={articleDetails.author}
-          url={articleDetails.url}
-          sourceName={articleDetails.sourceName}
         />
       } 
 
-      <Header handleSideMenuToggle={handleSideMenuToggle}/>
+      {isConclusionsPopUpActive &&
+        <PopUpContainer
+          PopUpContent={
+            <Conclusions/>
+          }
+          onClose={handleConclusionPopUpClose}
+        />
+      }
+
+      <Header 
+        handleSideMenuToggle={handleSideMenuToggle}
+        handleConclusionPopUpOpen={handleConclusionPopUpOpen}
+      />
 
       <Routes>
         <Route

@@ -31,3 +31,19 @@
     font-size: var(--fs-700);
     margin-right: 3rem;
 }
+
+.header__actions-container {
+    height: fit-content;
+    display: flex;
+    align-items: stretch;
+    margin-left: auto;
+    gap: 1rem;
+}
+
+.header__open-conclusions-button {
+    color: var(--clr-accent);
+    background-color: var(--clr-very-dark);
+    font-size: var(--fs-200);
+    border: none;
+    padding: 0.5rem 1rem;
+}
