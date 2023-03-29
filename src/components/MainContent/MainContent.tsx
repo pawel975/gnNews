@@ -22,37 +22,42 @@ const MainContent: React.FC<MainContentProps> = ({fetchedArticles, isSideMenuOpe
 
     const countryCode = useParams().countryCode || DEFAULT_COUNTRY;
 
-    const [isError, setIsError] = useState<boolean>(false);
+    const [isFetchError, setIsFetchError] = useState<boolean>(false);
+    const [isDataLoading, setIsDataLoading] = useState<boolean>(false);
 
     useEffect(() => {
 
         const fetchData = async () => {
-
             
             try {
 
                 // setFetchedArticles(countryNewsUS.articles);
 
                 // TODO: Switch mocked data to 
+
+                setIsDataLoading(true);
                 const response = await fetch(`https://newsapi.org/v2/top-headlines?country=${countryCode}&apiKey=${import.meta.env.VITE_NEWS_API_KEY}`)
                 
                 if (!response.ok) {
+                    setIsDataLoading(false);
                     throw new Error (`HTTP error: ${response.status} `)
                 }
                 
                 const data = await response.json();
                 
                 if (data.totalResults === 0) {
+                    setIsDataLoading(false);
                     throw new Error("There no articles for given country code")
                 }
 
                 setFetchedArticles(data.articles)
-                setIsError(false)
+                setIsFetchError(false)
+                setIsDataLoading(false);
 
             } catch (error) {
-
+                setIsDataLoading(false);
+                setIsFetchError(true);
                 console.error(`Cannot get articles: ${error}`)
-                setIsError(true);
             }
 
         }
@@ -66,15 +71,20 @@ const MainContent: React.FC<MainContentProps> = ({fetchedArticles, isSideMenuOpe
     return (
         <main className="main-content">
             {isSideMenuOpen && <SideMenu handleSideMenuToggle={handleSideMenuToggle} />}
+            <div className="main-content__articles-container">
+                {
+                    isDataLoading ? <p>Loading...</p> :
+                    isFetchError ? 
+                    <h1>Country code doesn't exist</h1>
+                    :
+                    <ArticlesContainer 
+                        fetchedArticles={fetchedArticles}
+                        handleArticleClick={handleArticleClick}
+                    />
+                }
+            </div>
+                
 
-            {isError ? 
-                <h1>Country code doesnt' exist</h1>
-                :
-                <ArticlesContainer 
-                    fetchedArticles={fetchedArticles}
-                    handleArticleClick={handleArticleClick}
-                />
-            }
 
         </main>
     )

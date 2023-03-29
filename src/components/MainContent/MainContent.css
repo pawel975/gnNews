@@ -3,4 +3,9 @@
     flex-direction: row;
     flex-grow: 1;
     background-color: var(--clr-light);
+    width: 100%;
   }
+
+.main-content__articles-container {
+  width: 100%;
+}
