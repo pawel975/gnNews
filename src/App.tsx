@@ -34,6 +34,8 @@ function App() {
       sourceName: "",
     }
   );
+
+  const DEFAULT_ROUTE = '/country/ar';
   
   const handleSideMenuToggle = (): void => {
     setIsSideMenuOpen(!isSideMenuOpen);
@@ -41,10 +43,6 @@ function App() {
 
   const handleArticleDetailsPopUpClose = (): void => {
     setIsArticleDetailsPupUpActive(false);
-  }
-
-  const handleArticleDetailsPopUpOpen = (): void => {
-    setIsArticleDetailsPupUpActive(true);
   }
 
   const handleConclusionPopUpClose = (): void => {
@@ -90,13 +88,14 @@ function App() {
       <Header 
         handleSideMenuToggle={handleSideMenuToggle}
         handleConclusionPopUpOpen={handleConclusionPopUpOpen}
+        defaultRoute={DEFAULT_ROUTE}
       />
 
       <Routes>
         <Route
           index
           path='/'
-          element={<Navigate to="/country/pl"/>}
+          element={<Navigate to="/country/ar"/>}
         />
 
         <Route

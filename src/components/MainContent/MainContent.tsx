@@ -1,5 +1,5 @@
 import { ArticleData } from "../../intefaces/ArticleData";
-import {useEffect} from "react";
+import {useState, useEffect} from "react";
 import ArticlesContainer from "../ArticlesContainer/ArticlesContainer";
 import SideMenu from "../SideMenu/SideMenu";
 import './MainContent.css';
@@ -22,11 +22,43 @@ const MainContent: React.FC<MainContentProps> = ({fetchedArticles, isSideMenuOpe
 
     const countryCode = useParams().countryCode || DEFAULT_COUNTRY;
 
+    const [isError, setIsError] = useState<boolean>(false);
+
     useEffect(() => {
 
-        // TODO: Switch mocked data to 
-        // fetch(`https://newsapi.org/v2/top-headlines?country=${countryCode}&apiKey=${import.meta.env.VITE_NEWS_API_KEY}`).then(res => res.json()).then(data => setFetchedArticles(data.articles)) 
-        setFetchedArticles(countryNewsUS.articles);
+        const fetchData = async () => {
+
+            
+            try {
+
+                // setFetchedArticles(countryNewsUS.articles);
+
+                // TODO: Switch mocked data to 
+                const response = await fetch(`https://newsapi.org/v2/top-headlines?country=${countryCode}&apiKey=${import.meta.env.VITE_NEWS_API_KEY}`)
+                
+                if (!response.ok) {
+                    throw new Error (`HTTP error: ${response.status} `)
+                }
+                
+                const data = await response.json();
+                
+                if (data.totalResults === 0) {
+                    throw new Error("There no articles for given country code")
+                }
+
+                setFetchedArticles(data.articles)
+                setIsError(false)
+
+            } catch (error) {
+
+                console.error(`Cannot get articles: ${error}`)
+                setIsError(true);
+            }
+
+        }
+
+
+        fetchData()
     
       }, [countryCode, setFetchedArticles])
 
@@ -34,10 +66,16 @@ const MainContent: React.FC<MainContentProps> = ({fetchedArticles, isSideMenuOpe
     return (
         <main className="main-content">
             {isSideMenuOpen && <SideMenu handleSideMenuToggle={handleSideMenuToggle} />}
-            <ArticlesContainer 
-                fetchedArticles={fetchedArticles}
-                handleArticleClick={handleArticleClick}
-            />
+
+            {isError ? 
+                <h1>Country code doesnt' exist</h1>
+                :
+                <ArticlesContainer 
+                    fetchedArticles={fetchedArticles}
+                    handleArticleClick={handleArticleClick}
+                />
+            }
+
         </main>
     )
 }

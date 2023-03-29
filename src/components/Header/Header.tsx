@@ -6,9 +6,11 @@ import {GiHamburgerMenu as OpenSideMenuIcon} from 'react-icons/gi';
 interface HeaderProps {
     handleSideMenuToggle: Function,
     handleConclusionPopUpOpen: Function
+    defaultRoute: string
 }
 
-const Header: React.FC<HeaderProps> = ({handleSideMenuToggle, handleConclusionPopUpOpen}) => {
+const Header: React.FC<HeaderProps> = ({handleSideMenuToggle, handleConclusionPopUpOpen, defaultRoute}) => {
+    
     return (
         <header className="header">
             
@@ -20,7 +22,7 @@ const Header: React.FC<HeaderProps> = ({handleSideMenuToggle, handleConclusionPo
             </button>
 
             <div className="header__logo-container">
-                <NavLink className='header__logo' to='/country/pl'>
+                <NavLink className='header__logo' to={defaultRoute}>
                     <span>gnNews</span>
                 </NavLink>
             </div>
