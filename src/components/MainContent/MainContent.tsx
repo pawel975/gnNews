@@ -8,6 +8,7 @@ import {useParams} from "react-router";
 // TODO: Delete when real data will be fetched
 import countryNewsUS from '../../assets/mocks/countryNewsUS.json';
 import { Oval } from "react-loader-spinner";
+import ErrorMessage from "../ErrorMessage/ErrorMessage";
 
 interface MainContentProps {
     fetchedArticles: ArticleData[];
@@ -87,18 +88,20 @@ const MainContent: React.FC<MainContentProps> = ({fetchedArticles, isSideMenuOpe
                             strokeWidthSecondary={4}
                         /> 
                     :
-                    isFetchError ? 
-                    <h1>Country code doesn't exist</h1>
-                    :
-                    <ArticlesContainer 
-                        fetchedArticles={fetchedArticles}
-                        handleArticleClick={handleArticleClick}
-                    />
+                        isFetchError ? 
+                            <ErrorMessage 
+                                message={`Something went wrong - cannot load articles. Check internet connection and refresh the page.`}
+                                textColorTheme="dark"
+                                size="1"
+                            />
+                        :
+                            <ArticlesContainer 
+                                fetchedArticles={fetchedArticles}
+                                handleArticleClick={handleArticleClick}
+                            />
                 }
             </div>
                 
-
-
         </main>
     )
 }
