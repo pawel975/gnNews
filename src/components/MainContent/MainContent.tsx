@@ -7,6 +7,7 @@ import {useParams} from "react-router";
 
 // TODO: Delete when real data will be fetched
 import countryNewsUS from '../../assets/mocks/countryNewsUS.json';
+import { Oval } from "react-loader-spinner";
 
 interface MainContentProps {
     fetchedArticles: ArticleData[];
@@ -67,13 +68,25 @@ const MainContent: React.FC<MainContentProps> = ({fetchedArticles, isSideMenuOpe
     
       }, [countryCode, setFetchedArticles])
 
-
     return (
         <main className="main-content">
             {isSideMenuOpen && <SideMenu handleSideMenuToggle={handleSideMenuToggle} />}
             <div className="main-content__articles-container">
                 {
-                    isDataLoading ? <p>Loading...</p> :
+                    isDataLoading ? 
+                        <Oval
+                            height={80}
+                            width={80}
+                            color="#4fa94d"
+                            wrapperStyle={{margin: "2rem"}}
+                            wrapperClass=""
+                            visible={true}
+                            ariaLabel='oval-loading'
+                            secondaryColor="#4fa94d"
+                            strokeWidth={4}
+                            strokeWidthSecondary={4}
+                        /> 
+                    :
                     isFetchError ? 
                     <h1>Country code doesn't exist</h1>
                     :
