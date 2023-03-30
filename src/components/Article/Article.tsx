@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { ArticleData } from "../../intefaces/ArticleData"
 import "./Article.css";
 
@@ -8,6 +9,8 @@ interface ArticleProps {
 }
 
 const Article: React.FC<ArticleProps> = ({articleData, viewType, handleArticleClick}) => {
+
+    const {t} = useTranslation();
 
     const {author, content, publishedAt, source, title, url, urlToImage} = articleData
 
@@ -23,8 +26,8 @@ const Article: React.FC<ArticleProps> = ({articleData, viewType, handleArticleCl
             })}
         >
             <header className="article__header list-type">{title}</header>
-            <div className="article__source list-type">Source: <span><strong>{source.name}</strong></span></div>
-            <div className="article__publication-date list-type">Published at: <span><strong>{publishedAt}</strong></span></div>
+            <div className="article__source list-type">{t('article.source')}: <span><strong>{source.name}</strong></span></div>
+            <div className="article__publication-date list-type">{t('article.published_at')}: <span><strong>{publishedAt}</strong></span></div>
         </button>
 
     const gridTypeArticle =
@@ -49,8 +52,8 @@ const Article: React.FC<ArticleProps> = ({articleData, viewType, handleArticleCl
             </div>
 
             <div className="article__release-details-container">
-                <div className="article__source grid-type">Source: <span><strong>{source.name}</strong></span></div>
-                <div className="article__publication-date grid-type">Published at: <span><strong>{publishedAt}</strong></span></div>
+                <div className="article__source grid-type">{t('article.source')}: <span><strong>{source.name}</strong></span></div>
+                <div className="article__publication-date grid-type">{t('article.published_at')}: <span><strong>{publishedAt}</strong></span></div>
             </div>
 
         </button>

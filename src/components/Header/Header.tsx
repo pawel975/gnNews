@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import ToggleArticlesViewTypeButton from '../ToggleArticlesViewTypeButton/ToggleArticlesViewTypeButton';
 import './Header.css';
 import {GiHamburgerMenu as OpenSideMenuIcon} from 'react-icons/gi';
+import { useTranslation } from 'react-i18next';
 
 interface HeaderProps {
     handleSideMenuToggle: Function,
@@ -11,6 +12,8 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({handleSideMenuToggle, handleConclusionPopUpOpen, defaultRoute}) => {
     
+    const {t} = useTranslation();
+
     return (
         <header className="header" data-testid="header">
             
@@ -34,7 +37,7 @@ const Header: React.FC<HeaderProps> = ({handleSideMenuToggle, handleConclusionPo
                     data-testid="open-conclusions-button"
                     onClick={() => handleConclusionPopUpOpen()}
                 >
-                    Conclusions
+                    {t(`header.conclusions`)}
                 </button>
 
                 <ToggleArticlesViewTypeButton/> 

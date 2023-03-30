@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { formatTimestamp } from "../../helpers/formatTimestamp";
 import {useState, useEffect} from "react";
 
 const CurrentTimeViewer: React.FC = () => {
+
+    const {t} = useTranslation();
 
     const [currentTime, setCurrentTime] = useState<string>("00:00:00");
 
@@ -19,7 +22,7 @@ const CurrentTimeViewer: React.FC = () => {
 
     return (
         <div className="current-time-viewer">
-            <div>Time: <span>{currentTime}</span></div>
+            <div>{t('footer.time')}: <span>{currentTime}</span></div>
         </div>
     )
 }
