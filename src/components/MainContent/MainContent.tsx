@@ -4,9 +4,6 @@ import ArticlesContainer from "../ArticlesContainer/ArticlesContainer";
 import SideMenu from "../SideMenu/SideMenu";
 import './MainContent.css';
 import {useParams} from "react-router";
-
-// TODO: Delete when real data will be fetched
-import countryNewsUS from '../../assets/mocks/countryNewsUS.json';
 import { Oval } from "react-loader-spinner";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 
@@ -30,13 +27,8 @@ const MainContent: React.FC<MainContentProps> = ({fetchedArticles, isSideMenuOpe
     useEffect(() => {
 
         const fetchData = async () => {
-            
+
             try {
-
-                // setFetchedArticles(countryNewsUS.articles);
-
-                // TODO: Switch mocked data to 
-
                 setIsDataLoading(true);
                 const response = await fetch(`https://newsapi.org/v2/top-headlines?country=${countryCode}&apiKey=${import.meta.env.VITE_NEWS_API_KEY}`)
                 

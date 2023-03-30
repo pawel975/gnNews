@@ -8,7 +8,11 @@ interface PopUpContainerProps {
 
 const PopUpContainer: React.FC<PopUpContainerProps> = ({PopUpContent, onClose}) => {
     return (
-        <div className="pop-up-container" onClick={() => onClose()}>
+        <div 
+            className="pop-up-container" 
+            data-testid="popup"
+            onClick={() => onClose()}
+        >
             <section className="pop-up-container__modal" onClick={e => e.stopPropagation()}>
                 {PopUpContent}
             </section>

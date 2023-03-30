@@ -6,3 +6,10 @@
   flex-direction: column;
   position: relative;
 }
+
+.go-back-to-home-page-link {
+  width: fit-content;
+  height: fit-content;
+  margin-inline: auto;
+  color: var(--clr-very-dark);
+}

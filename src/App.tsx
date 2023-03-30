@@ -4,10 +4,11 @@ import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import MainContent from './components/MainContent/MainContent'
 import { ArticleData } from './intefaces/ArticleData'
-import {Routes, Route, Navigate} from "react-router-dom";
+import {Routes, Route, Navigate, Link} from "react-router-dom";
 import ArticleDetailsPopUp from './components/ArticleDetailsPopUp/ArticleDetailsPopUp'
 import PopUpContainer from './components/PopUpContainer/PopUpContainer'
 import Conclusions from './components/Conclusions/Conclusions'
+import ErrorMessage from './components/ErrorMessage/ErrorMessage'
 
 export interface ArticleDetails {
   title: string | null
@@ -59,7 +60,7 @@ function App() {
   }
 
   return (
-    <div className="app">
+    <div className="app" data-testid="app">
       
       {isArticleDetailsPopUpActive && 
         <PopUpContainer 
@@ -113,7 +114,19 @@ function App() {
 
         <Route
           path='*'
-          element={<p>404 NOT FOUND</p>}
+          element={
+            <>
+              <ErrorMessage
+                message='Invalid URL'
+              />
+              <Link
+                to="/"
+                className='go-back-to-home-page-link'
+              >
+                Go back to home page
+              </Link>
+            </>
+          }
         />
 
       </Routes>

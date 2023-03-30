@@ -32,9 +32,10 @@ const SideMenu: React.FC<SideMenuProps> = ({handleSideMenuToggle}) => {
     })
 
     return (
-        <section className="side-menu">
+        <section className="side-menu" data-testid="side-menu">
             <button 
                 className='side-menu__side-menu-close-cross'
+                data-testid="side-menu-close-cross"
                 onClick={() => handleSideMenuToggle()} 
             >
                 <CloseSideMenuCross />

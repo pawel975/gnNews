@@ -8,7 +8,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({viewedArticlesCount}) => {
     return (
-        <footer className="footer">
+        <footer className="footer" data-testid="footer">
             <CurrentTimeViewer/>
             <ArticlesCount viewedArticlesCount={viewedArticlesCount}/>
         </footer>

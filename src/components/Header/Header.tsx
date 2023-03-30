@@ -12,10 +12,11 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({handleSideMenuToggle, handleConclusionPopUpOpen, defaultRoute}) => {
     
     return (
-        <header className="header">
+        <header className="header" data-testid="header">
             
             <button 
                 className='header__open-side-menu-icon'
+                data-testid="open-side-menu-icon"
                 onClick={() => handleSideMenuToggle()}
             >
                 <OpenSideMenuIcon />
@@ -30,6 +31,7 @@ const Header: React.FC<HeaderProps> = ({handleSideMenuToggle, handleConclusionPo
             <div className='header__actions-container'>
                 <button
                     className='header__open-conclusions-button'
+                    data-testid="open-conclusions-button"
                     onClick={() => handleConclusionPopUpOpen()}
                 >
                     Conclusions
