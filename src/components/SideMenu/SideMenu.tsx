@@ -13,8 +13,6 @@ const SideMenu: React.FC<SideMenuProps> = ({handleSideMenuToggle}) => {
     const {t} = useTranslation();
 
     const isMobile = window.innerWidth < 600;
-
-    //TODO: Encapsulate this logic into separate component
     const allCountries = countriesList.map(country => {
 
         const FLAG_STYLE = "SHINY"; // Available FLAT/SHINY
