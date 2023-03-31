@@ -2,6 +2,9 @@
   "header": {
     "conclusions": "Wnioski"
   },
+  "side_menu": {
+    "select_country_heading": "Wybierz kraj aby wyświetlić wiadomości"
+  },
   "countries_list": {
     "china": "Chiny",
     "france": "Francja",

@@ -6,6 +6,14 @@
     padding: 1rem;
 }
 
+@media (max-width: 37.5rem) {
+    .side-menu {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+}
+
 .side-menu__side-menu-close-cross {
     position: absolute;
     top: 1rem;
@@ -14,6 +22,12 @@
     border: none;
     font-size: var(--fs-500);
     color: var(--clr-accent);
+}
+
+.side-menu__heading {
+    width: 70%;
+    color: var(--clr-accent);
+    padding: 0.5rem 0rem;
 }
 
 .side-menu__countries-container {

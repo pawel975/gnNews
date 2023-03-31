@@ -1,5 +1,5 @@
 import './SideMenu.css';
-import countriesList from '../../assets/countries-list.json';
+import countriesList from '../../data/countries-list.json';
 import {IoIosCloseCircle as CloseSideMenuCross} from 'react-icons/io';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -12,6 +12,8 @@ const SideMenu: React.FC<SideMenuProps> = ({handleSideMenuToggle}) => {
 
     const {t} = useTranslation();
 
+    const isMobile = window.innerWidth < 600;
+
     //TODO: Encapsulate this logic into separate component
     const allCountries = countriesList.map(country => {
 
@@ -23,11 +25,12 @@ const SideMenu: React.FC<SideMenuProps> = ({handleSideMenuToggle}) => {
 
         return (
             <NavLink
-                to={`/country/${COUNTRY_CODE}`} 
+                to={`/country/${COUNTRY_CODE}`}
                 className={({isActive, isPending}) => 
                     isPending ? "country pending" : isActive ? "country active" : "country"
                 }
                 key={COUNTRY_CODE}
+                onClick={isMobile ? () => handleSideMenuToggle() : () => {}}
             >
                 <img src={`https://www.countryflagicons.com/${FLAG_STYLE}/${FLAG_SIZE}/${COUNTRY_CODE}.png`} alt='country'/>
                 <span>{t(countryTranslation)}</span>
@@ -44,6 +47,13 @@ const SideMenu: React.FC<SideMenuProps> = ({handleSideMenuToggle}) => {
             >
                 <CloseSideMenuCross />
             </button>
+
+            <header 
+                className='side-menu__heading'
+            >
+                {t('side_menu.select_country_heading')}
+            </header>
+
             <div className='side-menu__countries-container'>
                 {allCountries}
             </div>

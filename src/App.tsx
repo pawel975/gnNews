@@ -20,7 +20,7 @@ export interface ArticleDetails {
 
 function App() {
 
-  const [isSideMenuOpen, setIsSideMenuOpen] = useState<boolean>(true);
+  const [isSideMenuOpen, setIsSideMenuOpen] = useState<boolean>(false);
   const [fetchedArticles, setFetchedArticles] = useState<Array<ArticleData>>([]);
 
   const [isArticleDetailsPopUpActive, setIsArticleDetailsPupUpActive] = useState<boolean>(false);
@@ -36,7 +36,7 @@ function App() {
     }
   );
 
-  const DEFAULT_ROUTE = '/country/ar';
+  const DEFAULT_ROUTE = '/country/pl';
   
   const handleSideMenuToggle = (): void => {
     setIsSideMenuOpen(!isSideMenuOpen);
@@ -96,7 +96,7 @@ function App() {
         <Route
           index
           path='/'
-          element={<Navigate to="/country/ar"/>}
+          element={<Navigate to={DEFAULT_ROUTE}/>}
         />
 
         <Route

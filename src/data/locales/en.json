@@ -2,6 +2,9 @@
   "header": {
     "conclusions": "Conclusions"
   },
+  "side_menu": {
+    "select_country_heading": "Select country to view articles"
+  },
   "countries_list": {
     "china": "China",
     "france": "France",
