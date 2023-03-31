@@ -54,9 +54,7 @@ const MainContent: React.FC<MainContentProps> = ({fetchedArticles, isSideMenuOpe
                 setIsFetchError(true);
                 console.error(`Cannot get articles: ${error}`)
             }
-
         }
-
 
         fetchData()
     
@@ -64,7 +62,11 @@ const MainContent: React.FC<MainContentProps> = ({fetchedArticles, isSideMenuOpe
 
     return (
         <main className="main-content">
-            {isSideMenuOpen && <SideMenu handleSideMenuToggle={handleSideMenuToggle} />}
+
+            {isSideMenuOpen && 
+                <SideMenu handleSideMenuToggle={handleSideMenuToggle} />
+            }
+
             <div className="main-content__articles-container">
                 {
                     isDataLoading ? 

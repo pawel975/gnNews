@@ -2,9 +2,7 @@ import { useTranslation } from "react-i18next";
 import { ArticleDetails } from "../../App";
 import "./ArticleDetailsPopUp.css";
 
-interface ArticleDetailsPopUpProps extends ArticleDetails {}
-
-const ArticleDetailsPopUp: React.FC<ArticleDetailsPopUpProps> = ({title, content, author, url, sourceName}) => {
+const ArticleDetailsPopUp: React.FC<ArticleDetails> = ({title, content, author, url, sourceName}) => {
 
     const {t} = useTranslation();
 

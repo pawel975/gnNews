@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import {useState, useEffect} from "react";
+import {useState} from "react";
 import ToggleArticlesViewTypeButton from '../ToggleArticlesViewTypeButton/ToggleArticlesViewTypeButton';
 import './Header.css';
 import {GiHamburgerMenu as OpenSideMenuIcon} from 'react-icons/gi';
@@ -18,7 +18,6 @@ const Header: React.FC<HeaderProps> = ({handleSideMenuToggle, handleConclusionPo
     const DEFAULT_LANGUAGE = i18n.language.toUpperCase();
 
     const [language, setLanguage] = useState<string>(DEFAULT_LANGUAGE);
-
 
     const handleLanguageChange = () :void => {
         const updatedLanguage = language === "PL" ? "EN" : "PL";

@@ -12,7 +12,7 @@ const CurrentTimeViewer: React.FC = () => {
 
         const timeFlowInterval = setInterval(() => {
             const currentTimestamp = formatTimestamp(new Date().getTime());
-            setCurrentTime(currentTimestamp as string);
+            setCurrentTime(currentTimestamp);
         }, 1000)
 
         return ()=>{
