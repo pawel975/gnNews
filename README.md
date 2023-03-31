@@ -50,3 +50,5 @@ npm run build
 ```
 npm run test
 ```
+
+PS: W razie potrzeby mogę wysłać swój klucz API do osoby sprawdzającej zadanie :smiley:
