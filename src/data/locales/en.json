@@ -25,7 +25,8 @@
     "published_at": "Published at",
     "no_title": "There is no title",
     "no_content": "There is no content to view",
-    "no_author": "No information"
+    "no_author": "No information",
+    "no_published_at_date": "No information"
   },
   "footer": {
     "time": "Time",

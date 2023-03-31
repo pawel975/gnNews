@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { ArticleData } from "../../intefaces/ArticleData"
 import "./Article.css";
+import formatDate from "../../helpers/formatDate";
 
 interface ArticleProps {
     articleData: ArticleData,
@@ -28,7 +29,7 @@ const Article: React.FC<ArticleProps> = ({articleData, viewType, handleArticleCl
         >
             <header className="article__header list-type">{title}</header>
             <div className="article__source list-type">{t('article.source')}: <span><strong>{source.name}</strong></span></div>
-            <div className="article__publication-date list-type">{t('article.published_at')}: <span><strong>{publishedAt}</strong></span></div>
+            <div className="article__publication-date list-type">{t('article.published_at')}: <span><strong>{publishedAt ? formatDate(publishedAt) : t('article.no_published_at_date')}</strong></span></div>
         </button>
 
     const gridTypeArticle =
@@ -55,7 +56,7 @@ const Article: React.FC<ArticleProps> = ({articleData, viewType, handleArticleCl
 
             <div className="article__release-details-container">
                 <div className="article__source grid-type">{t('article.source')}: <span><strong>{source.name}</strong></span></div>
-                <div className="article__publication-date grid-type">{t('article.published_at')}: <span><strong>{publishedAt}</strong></span></div>
+                <div className="article__publication-date grid-type">{t('article.published_at')}: <span><strong>{publishedAt ? formatDate(publishedAt) : t('article.no_published_at_date')}</strong></span></div>
             </div>
 
         </button>
