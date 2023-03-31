@@ -1,12 +1,16 @@
 .footer {
-    height: 3rem;
+    min-height: 3rem;
     width: 100%;
     background-color: var(--clr-dark);
-    padding: 2rem;
+    padding: 1rem 0.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     color: var(--clr-accent);
     margin-top: auto;
+}
+
+.footer > * {
+    text-align: center;
 }

@@ -8,7 +8,7 @@ const Conclusions: React.FC = () => {
             </p>
             <br />
             <p>
-                Najwięcej satysfakcji przyniosła praca z API artykułów, Error handling i Routing :D
+                Najwięcej satysfakcji przyniosła praca z API artykułów, error handling i routing :D
             </p>
         </div>
     )
