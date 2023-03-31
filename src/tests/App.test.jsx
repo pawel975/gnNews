@@ -5,6 +5,7 @@ import { describe, expect, test } from "vitest";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "../redux/store";
+import i18n from '../i18n';
 
 /**
 * @vitest-environment jsdom
@@ -38,18 +39,8 @@ describe("<App/>", () => {
 })
 
 describe("<SideMenu/>", () => {
-    test("is visible on first render", () => {
-        expect(screen.getByTestId("side-menu")).not.toBe(null);
-    })
-
-    test("is closed on side menu cross button click", () => {
-
-        expect(screen.getByTestId("side-menu")).not.toBe(null);
-
-        fireEvent.click(screen.getByTestId("side-menu-close-cross"))
-
+    test("is not visible on first render", () => {
         expect(screen.queryByTestId("side-menu")).toBe(null);
-
     })
 
     test("is opened on header hamburger icon click", () => {
@@ -66,6 +57,19 @@ describe("<SideMenu/>", () => {
         fireEvent.click(screen.getByTestId("open-side-menu-icon"));
         expect(screen.queryByTestId("side-menu")).toBe(null);
     })
+
+    test("is closed on side menu cross button click", () => {
+
+        fireEvent.click(screen.getByTestId("open-side-menu-icon"))
+
+        expect(screen.getByTestId("side-menu")).not.toBe(null);
+
+        fireEvent.click(screen.getByTestId("side-menu-close-cross"))
+
+        expect(screen.queryByTestId("side-menu")).toBe(null);
+
+    })
+
 })
 
 describe("<Header/>", () => {
