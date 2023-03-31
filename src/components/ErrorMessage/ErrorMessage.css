@@ -5,3 +5,10 @@
     /* flex: 1; */
     margin-inline: auto;
 }
+
+.go-back-to-home-page-link {
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: auto;
+    color: var(--clr-very-dark);
+  }

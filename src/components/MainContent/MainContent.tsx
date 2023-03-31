@@ -6,6 +6,7 @@ import './MainContent.css';
 import {useParams} from "react-router";
 import { Oval } from "react-loader-spinner";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
+import { Link } from "react-router-dom";
 
 interface MainContentProps {
     fetchedArticles: ArticleData[];
@@ -81,11 +82,19 @@ const MainContent: React.FC<MainContentProps> = ({fetchedArticles, isSideMenuOpe
                         /> 
                     :
                         isFetchError ? 
+                        <>
                             <ErrorMessage 
                                 message={`Something went wrong - cannot load articles. Check internet connection and refresh the page.`}
                                 textColorTheme="dark"
                                 size="1"
                             />
+                            <Link
+                                to="/"
+                                className='go-back-to-home-page-link'
+                            >
+                                Go back to home page
+                            </Link>
+                        </>
                         :
                             <ArticlesContainer 
                                 fetchedArticles={fetchedArticles}
