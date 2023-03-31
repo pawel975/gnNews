@@ -1,28 +1,30 @@
 {
-    "header": {
-      "conclusions": "Wnioski"
-    },
-    "countriesList": {
-      "china": "Chiny",
-      "france": "Francja",
-      "germany": "Niemcy",
-      "india": "Indie",
-      "israel": "Izrael",
-      "japan": "Japonia",
-      "norway": "Norwegia",
-      "poland": "Polska",
-      "saudi_arabia": "Arabia Saudyjska",
-      "ukraine": "Ukraina",
-      "united_kingdom": "Wielka Brytania",
-      "united_states": "Stany Zjednoczone"
-    },
-    "article": {
-      "source": "Źródło",
-      "author": "Autor",
-      "published_at": "Data publikacji"
-    },
-    "footer": {
-      "time": "Czas",
-      "articlesOnPage": "Liczba wyświetlonych artykułów"
-    }
+  "header": {
+    "conclusions": "Wnioski"
+  },
+  "countries_list": {
+    "china": "Chiny",
+    "france": "Francja",
+    "germany": "Niemcy",
+    "india": "Indie",
+    "israel": "Izrael",
+    "japan": "Japonia",
+    "norway": "Norwegia",
+    "poland": "Polska",
+    "saudi_arabia": "Arabia Saudyjska",
+    "ukraine": "Ukraina",
+    "united_kingdom": "Wielka Brytania",
+    "united_states": "Stany Zjednoczone"
+  },
+  "article": {
+    "source": "Źródło",
+    "author": "Autor",
+    "published_at": "Data publikacji",
+    "no_title": "Brak tytułu",
+    "no_content": "Brak materiału do wyświetlenia"
+  },
+  "footer": {
+    "time": "Czas",
+    "articles_on_page": "Liczba wyświetlonych artykułów"
   }
+}

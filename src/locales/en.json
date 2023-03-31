@@ -2,27 +2,29 @@
   "header": {
     "conclusions": "Conclusions"
   },
-    "countriesList": {
-      "china": "China",
-      "france": "France",
-      "germany": "Germany",
-      "india": "India",
-      "israel": "Israel",
-      "japan": "Japan",
-      "norway": "Norway",
-      "poland": "Poland",
-      "saudi_arabia": "Saudi Arabia",
-      "ukraine": "Ukraine",
-      "united_kingdom": "United Kingdom",
-      "united_states": "United States"
-    },
-    "article": {
-      "source": "Source",
-      "author": "Author",
-      "published_at": "Published at"
-    },
-    "footer": {
-      "time": "Time",
-      "articlesOnPage": "Articles on page"
-    }
+  "countries_list": {
+    "china": "China",
+    "france": "France",
+    "germany": "Germany",
+    "india": "India",
+    "israel": "Israel",
+    "japan": "Japan",
+    "norway": "Norway",
+    "poland": "Poland",
+    "saudi_arabia": "Saudi Arabia",
+    "ukraine": "Ukraine",
+    "united_kingdom": "United Kingdom",
+    "united_states": "United States"
+  },
+  "article": {
+    "source": "Source",
+    "author": "Author",
+    "published_at": "Published at",
+    "no_title": "There is no title",
+    "no_content": "There is no content to view"
+  },
+  "footer": {
+    "time": "Time",
+    "articles_on_page": "Articles on page"
   }
+}

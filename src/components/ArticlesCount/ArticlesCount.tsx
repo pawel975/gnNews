@@ -10,7 +10,7 @@ const ArticlesCount: React.FC<ArticlesCountProps> = ({viewedArticlesCount}) => {
 
     return (
         <div className="articles-count">
-            <div>{t('footer.articlesOnPage')}: <span>{viewedArticlesCount}</span></div>
+            <div>{t('footer.articles_on_page')}: <span>{viewedArticlesCount}</span></div>
         </div>
     )
 }

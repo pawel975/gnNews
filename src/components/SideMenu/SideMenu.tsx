@@ -19,7 +19,7 @@ const SideMenu: React.FC<SideMenuProps> = ({handleSideMenuToggle}) => {
         const FLAG_SIZE = 32; // 16/24/32/48/64 - width in pixels
         const COUNTRY_CODE = country.code;
         const COUNTRY_NAME = country.name;
-        const countryTranslation = "countriesList." + COUNTRY_NAME.replace(/\s/g, '_').toLowerCase();
+        const countryTranslation = "countries_list." + COUNTRY_NAME.replace(/\s/g, '_').toLowerCase();
 
         return (
             <NavLink
