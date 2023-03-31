@@ -1,33 +1,52 @@
 # gnNews - gnStudio React.js developer challenge
 
-Witaj, jeżeli znalazłeś się w tym miejscu to najprawdopodobniej chcesz dołączyć do niesamowitego teamu tworzącego rozwiązania szyte na miarę i chcesz w końcu realizować projekty, które nie będą nudne, będą sprawiały Ci frajdę i będą napawały Cię dumą kiedy tylko o nich pomyślisz.
+## Przygotowanie środowiska
 
-Cóż, projekty są różne, więc może tak właśnie być, a może być zupełnie odwrotnie 😉 Możemy Ci jedynie zagwarantować, że nie będziesz się nudzić.
+1. Sklonowanie repozytorium
 
-## O zadaniu
+```
+git clone https://github.com/pawel975/gnNews.git
+cd gnNews
+```
 
-Abyśmy mogli bliżej poznać Twoje umiejętności techniczne, stopień zaangażowania oraz sposób myślenia, przygotowaliśmy dla Ciebie zadanie polegające na stworzeniu prostej aplikacji będącej "agregatorem newsów" szumnie nazwanej przez nas roboczo **gnNews**.
+2. Instalacja
 
-To na czym nam zależy to przede wszystkim czytelny kod, działająca aplikacja i UI, który nie wygląda jak konar ciosany tępym scyzorykiem (hint: pamiętaj o RWD, ale ciii, nie mów nikomu, że Ci podpowiedziałem 😉)
+```
+npm install
+```
 
-## Następne kroki
+3. Utworzenie plik .env
 
-- wykonaj forka tego repozytorium jako prywatne repo
-- postępuj z instrukcjami zawartymi w [opis-zadania.md](./opis-zadania.md)
-- rozwiąż zadanie najlepiej jak potrafisz
-- dodaj użytkownika [gn-studio-pl](https://github.com/gn-studio-pl) do repozytorium
+Aplikacja wykorzystuje publiczne API https://newsapi.org/ , które wymaga autentykacji kluczem. Należy utworzyć plik `.env` w katalogu głównym o następującej treści.
 
-## Uwagi
+.env
 
-- aplikację wykonaj w oparciu o React.js, wykorzystanie TypeScript'u bedzie mile widziane i dodatkowo punktowane
-- wykorzystaj nastepujace biblioteki: Redux toolkit, react-test-lib. Może odbierzesz to jako wychodzenie z armatą na muchy ale korzystamy z nich w naszych projektach i chcemy wiedziec czy czujesz się w nich dobrze
-- nie musisz tworzyć całego UI samemu, możesz skorzystać z dowolnej biblioteki UI
-- nie ma tutaj limitu czasu (poza wyznaczonym deadlinem), ale zalecamy, abyś nie spędzał nad tym zadaniem więcej jak 12 godzin
-- staraj się napisać swój kod najlepiej jak potrafisz
-- otestowanie przynajmniej części aplikacji mile widziane 😉
+```
+VITE_NEWS_API_KEY="TUTAJ UMIEŚĆ KLUCZ"
+```
 
-## Pytania?
+Lub alternatywna wersja - podmienić `import.meta.env.VITE_NEWS_API_KEY}` na klucz API
 
-Jeżeli masz jakiekolwiek pytania co do wykonywanego zadania, bądź coś nie jest dla Ciebie jasne, albo masz trudności na którymś etapie, nie krępuj się - dzwoń, pisz - wyjaśnimy (chyba 😛)
+src/components/MainContent/MainContent.tsx
 
-## Powodzenia!
+```javascript
+const response = await fetch(`https://newsapi.org/v2/top-headlines?country=${countryCode}&apiKey=${import.meta.env.VITE_NEWS_API_KEY}`)
+```
+
+4. Uruchomienie w trybie deweloperskim
+
+```
+npm run dev
+```
+
+5. Uruchomienie w trybie produkcyjnym
+
+```
+npm run build
+```
+
+6. Testowanie aplikacji
+
+```
+npm run test
+```
