@@ -17,6 +17,7 @@ const Article: React.FC<ArticleProps> = ({articleData, viewType, handleArticleCl
     const listTypeArticle = 
         <button 
             className="article list-type"
+            aria-label="article"
             onClick={() => handleArticleClick({
                 title: title,
                 content: content,
@@ -33,6 +34,7 @@ const Article: React.FC<ArticleProps> = ({articleData, viewType, handleArticleCl
     const gridTypeArticle =
         <button 
             className="article grid-type"
+            aria-label="article"
             onClick={() => handleArticleClick({
                 title: title,
                 content: content,

@@ -24,7 +24,8 @@
     "author": "Autor",
     "published_at": "Data publikacji",
     "no_title": "Brak tytułu",
-    "no_content": "Brak materiału do wyświetlenia"
+    "no_content": "Brak materiału do wyświetlenia",
+    "no_author": "Brak informacji"
   },
   "footer": {
     "time": "Czas",

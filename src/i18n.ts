@@ -4,19 +4,15 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import pl from "./data/locales/pl.json";
 import en from "./data/locales/en.json";
 
-const resources = {
-    pl: {translation: pl},
-    en: {translation: en},
-}
-
-console.log(resources)
-
 i18n
 .use(initReactI18next)
 .use(LanguageDetector)
 .init({
     debug: true,
-    resources: resources,
+    resources: {
+        pl: {translation: pl},
+        en: {translation: en},
+    },
     fallbackLng: "en"
 })
 
